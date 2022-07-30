@@ -25,7 +25,7 @@
         img {
             max-height: 2.5rem;
 
-            &::selection{
+            &::selection {
                 background-color: none;
             }
         }
@@ -34,11 +34,6 @@
     @media (max-width: $ss-md) {
         padding: 1rem 0rem;
     }
-}
-
-.header-scrolled {
-    background-color: $white;
-    box-shadow: 0px 2px 1rem rgba(18, 66, 101, 0.08);
 }
 
 .navbar {
@@ -77,18 +72,40 @@
                     margin-left: 5px;
                 }
 
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     color: $color_1;
                     background: rgba($color: $color_1, $alpha: 0.3);
-                    backdrop-filter: blur(2rem);
-                    bac
+                    backdrop-filter: blur(1rem);
+                }
+            }
+        }
+    }
+}
 
-                    >a {
+#header {
+
+    &.header-scrolled {
+        background: rgba($color: $white, $alpha: 0.25);
+        backdrop-filter: blur(1rem);
+        box-shadow: 0px 2px 1rem rgba(18, 66, 101, 0.08);
+
+        .navbar {
+            .nav-items {
+                .nav-item {
+                    a {
                         color: $color_1;
+                        &:hover,
+                        &.active {
+                            color: $color_1;
+                            background: linear-gradient(130deg, $color_3, $color_4);
+                            backdrop-filter: blur(1rem);
+                        }
                     }
                 }
             }
         }
+
     }
 }
 
@@ -174,7 +191,7 @@
 
         .nav-li {
             a {
-                border-radius: 2rem;
+                border-radius: 1rem;
                 margin: 0;
                 font-size: 1.1rem;
                 padding: 0.5rem 1.5rem;
@@ -183,7 +200,8 @@
                 &.active {
                     color: $color_1;
                     background-color: $color_3;
-                    background: linear-gradient(30deg, $color_3, $color_4 );;
+                    background: linear-gradient(30deg, $color_3, $color_4 );
+                    ;
                 }
             }
         }

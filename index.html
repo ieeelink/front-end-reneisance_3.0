@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -20,9 +24,6 @@
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -71,7 +72,7 @@
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 
         <div class="row justify-content-center align-items-center">
-            <h2>
+            <h2 data-aos="zoom-in">
                 Renaissance 3.0
             </h2>
 
@@ -152,6 +153,42 @@
 
     <main id="main">
 
+        <section id="counts" class="counts">
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-8 col-12 card count-card" data-aos="fade-up">
+
+                        <div class="row counters">
+
+                            <div class="col-lg-4 col-12 text-center count-box" data-aos="fade-up" data-aos-delay="200">
+                                <h4><span data-purecounter-start="0" data-purecounter-end="500"
+                                        data-purecounter-duration="1" class="purecounter">0</span>+</h4>
+
+                                <h5>Participants</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div>
+                            <div class="col-lg-4 col-12 text-center count-box" data-aos="fade-up" data-aos-delay="400">
+                                <h4><span data-purecounter-start="0" data-purecounter-end="89"
+                                        data-purecounter-duration="1" class="purecounter">0</span>+</h4>
+
+                                <h5>Student Branches</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div>
+                            <div class="col-lg-4 col-12 text-center count-box" data-aos="fade-up" data-aos-delay="600">
+                                <h4><span data-purecounter-start="0" data-purecounter-end="4"
+                                        data-purecounter-duration="1" class="purecounter">0</span></h4>
+
+                                <h5>Weeks</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer id="footer">
@@ -194,6 +231,7 @@
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 

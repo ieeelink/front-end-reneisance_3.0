@@ -3,7 +3,7 @@
     min-height: 100vh;
     overflow: hidden;
     position: relative;
-    background-color: $color_3;
+    background-color: $color_1;
     padding: 0;
     background: linear-gradient(-45deg, $color_3, $color_4, $color_3, $color_4);
     background-size: 400% 400%;
@@ -186,21 +186,6 @@
         }
     }
 
-}
-
-
-#hero .carousel-control-prev,
-#hero .carousel-control-next {
-    width: 10%;
-}
-
-#hero .carousel-control-next-icon,
-#hero .carousel-control-prev-icon {
-    background: none;
-    font-size: 48px;
-    line-height: 1;
-    width: auto;
-    height: auto;
 }
 
 
