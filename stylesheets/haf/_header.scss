@@ -78,6 +78,10 @@
                     background: rgba($color: $color_1, $alpha: 0.3);
                     backdrop-filter: blur(1rem);
                 }
+
+                &.active {
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -86,7 +90,7 @@
 #header {
 
     &.header-scrolled {
-        background: rgba($color: $white, $alpha: 0.25);
+        background: rgba($color: $black, $alpha: 0.5);
         backdrop-filter: blur(1rem);
         box-shadow: 0px 2px 1rem rgba(18, 66, 101, 0.08);
 
@@ -94,11 +98,11 @@
             .nav-items {
                 .nav-item {
                     a {
-                        color: $color_1;
+                        color: $white;
                         &:hover,
                         &.active {
-                            color: $color_1;
-                            background: linear-gradient(130deg, $color_3, $color_4);
+                            color: $color_3;
+                            background: rgba($color: $white, $alpha: 1);
                             backdrop-filter: blur(1rem);
                         }
                     }
