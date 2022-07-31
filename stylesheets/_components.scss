@@ -1,9 +1,8 @@
 .card {
     border: none;
     border-radius: 1rem;
-    background: rgba($color: $background_color_1, $alpha: 0.5);
-    backdrop-filter: blur(1rem);
-    box-shadow: 0px 0 30px rgba($color: $dark_color_1, $alpha: 0.1);
+    @include blur;
+    box-shadow: $shadow_1;
 
     .card-header,
     .card-footer {
@@ -163,5 +162,103 @@ form {
         a {
             font-weight: 600;
         }
+    }
+}
+
+.icon-move-right i {
+    transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3);
+}
+
+.icon-move-right:hover i,
+.icon-move-right:focus i {
+    transform: translateX(5px);
+}
+
+.icon-move-left i {
+    transition: all 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3);
+}
+
+.icon-move-left:hover i,
+.icon-move-left:focus i {
+    transform: translateX(-5px);
+}
+
+.img {
+    // border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img{
+        height: auto;
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+
+    &::after {
+        content: "";
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $gradient_1;
+        opacity: 0.0;
+    }
+}
+
+.bg-rt{
+    &::before {
+        content: "";
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: -2rem;
+        top: -2rem;
+        background: $gradient_1;
+        z-index: -1;
+    }
+}
+.bg-lt{
+    &::before {
+        content: "";
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -2rem;
+        top: -2rem;
+        background: $gradient_1;
+        z-index: -1;
+    }
+}
+
+.bg-rb{
+    &::before {
+        content: "";
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: -2rem;
+        bottom: -2rem;
+        background: $gradient_1;
+        z-index: -1;
+    }
+}
+
+.bg-lb{
+    &::before {
+        content: "";
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -2rem;
+        bottom: -2rem;
+        background: $gradient_1;
+        z-index: -1;
     }
 }

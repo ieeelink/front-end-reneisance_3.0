@@ -225,34 +225,28 @@
 }
 
 .wave1 use {
-    -webkit-animation: move-forever1 10s linear infinite;
     animation: move-forever1 10s linear infinite;
-    -webkit-animation-delay: -2s;
     animation-delay: -2s;
 }
 
 .wave2 use {
-    -webkit-animation: move-forever2 8s linear infinite;
-    animation: move-forever2 8s linear infinite;
-    -webkit-animation-delay: -2s;
+    animation: move-forever2 9s linear infinite;
     animation-delay: -2s;
 }
 
 .wave3 use {
-    -webkit-animation: move-forever3 6s linear infinite;
-    animation: move-forever3 6s linear infinite;
-    -webkit-animation-delay: -2s;
+    animation: move-forever3 8s linear infinite;
     animation-delay: -2s;
 }
 
-@-webkit-keyframes move-forever1 {
-    0% {
-        transform: translate(85px, 0%);
-    }
+.wave4 use {
+    animation: move-forever4 7s linear infinite;
+    animation-delay: -2s;
+}
 
-    100% {
-        transform: translate(-90px, 0%);
-    }
+.wave5 use {
+    animation: move-forever5 6s linear infinite;
+    animation-delay: -2s;
 }
 
 @keyframes move-forever1 {
@@ -262,16 +256,6 @@
 
     100% {
         transform: translate(-90px, 0%);
-    }
-}
-
-@-webkit-keyframes move-forever2 {
-    0% {
-        transform: translate(-90px, 0%);
-    }
-
-    100% {
-        transform: translate(85px, 0%);
     }
 }
 
@@ -285,22 +269,32 @@
     }
 }
 
-@-webkit-keyframes move-forever3 {
+@keyframes move-forever3 {
     0% {
-        transform: translate(-90px, 0%);
+        transform: translate(-95px, 0%);
     }
 
     100% {
-        transform: translate(85px, 0%);
+        transform: translate(80px, 0%);
     }
 }
 
-@keyframes move-forever3 {
+@keyframes move-forever4 {
     0% {
-        transform: translate(-90px, 0%);
+        transform: translate(-100px, 0%);
     }
 
     100% {
-        transform: translate(85px, 0%);
+        transform: translate(75px, 0%);
+    }
+}
+
+@keyframes move-forever5 {
+    0% {
+        transform: translate(-105px, 0%);
+    }
+
+    100% {
+        transform: translate(70px, 0%);
     }
 }
